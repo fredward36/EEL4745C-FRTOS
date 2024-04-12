@@ -1,0 +1,45 @@
+// G8RTOS_Semaphore.h
+// Date Created: 2023-07-26
+// Date Updated: 2024-04-08
+// Semaphores
+
+#ifndef G8RTOS_SEMAPHORES_H_
+#define G8RTOS_SEMAPHORES_H_
+
+/************************************Includes***************************************/
+
+#include <stdint.h>
+
+/************************************Includes***************************************/
+
+/*************************************Defines***************************************/
+#define NULL 0
+/*************************************Defines***************************************/
+
+/******************************Data Type Definitions********************************/
+
+// Semaphore typedef
+typedef int32_t semaphore_t;
+
+/******************************Data Type Definitions********************************/
+
+/****************************Data Structure Definitions*****************************/
+/****************************Data Structure Definitions*****************************/
+
+
+/********************************Public Functions***********************************/
+
+void G8RTOS_InitSemaphore(semaphore_t* s, int32_t value);
+void G8RTOS_WaitSemaphore(semaphore_t* s);
+void G8RTOS_SignalSemaphore(semaphore_t* s);
+
+/********************************Public Functions***********************************/
+
+/*******************************Private Variables***********************************/
+/*******************************Private Variables***********************************/
+
+/*******************************Private Functions***********************************/
+/*******************************Private Functions***********************************/
+
+#endif /* G8RTOS_SEMAPHORES_H_ */
+
